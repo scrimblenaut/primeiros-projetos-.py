@@ -1,0 +1,12 @@
+def is_isogram(string):
+    string = string.replace(' ','').lower()
+    string_nova = set(string)
+    return len(string_nova) == len(string)
+    
+    
+(is_isogram("Dermatoglyphics"))
+(is_isogram("isogram"))
+(is_isogram("aba"))
+(is_isogram("moOse"))
+(is_isogram("isIsogram"))
+(is_isogram(""))
