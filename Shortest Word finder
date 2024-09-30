@@ -1,0 +1,12 @@
+def find_short(s):
+    lista_palavras = s.split()
+
+    # Inicializa uma lista para armazenar os comprimentos
+    comprimentos = []
+    for palavras in lista_palavras:
+        numeros = len(palavras)  # Comprimento da palavra atual
+        comprimentos.append(numeros)  # Adiciona o comprimento à lista
+
+    # Encontra o menor comprimento
+    return (min(comprimentos))
+print(find_short("bitcoin take over the world maybe who knows perhaps"))
