@@ -1,0 +1,13 @@
+import math
+def find_next_square(sq):
+    new_sq = math.sqrt(sq)
+    sq2 = int(new_sq) * new_sq
+    if sq2/new_sq == new_sq:
+        new_sq = int(new_sq)+1
+        return new_sq * new_sq
+    else:
+        return -1
+print(find_next_square(121))
+print(find_next_square(625))
+print(find_next_square(319225))
+print(find_next_square(15241383936))
